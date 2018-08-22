@@ -1,0 +1,20 @@
+.page-heading {
+  @include padding-y;
+  text-align: center;
+  background-color: #f3f5f8;
+}
+
+.page-heading__title {
+  @include title;
+}
+
+.page-heading__title:after {
+  @include title-after;
+  background-color: #f3f5f8;
+}
+
+.page-heading__text {
+  width: 750px;
+  margin: 0 auto;
+  @include text-blocks;
+}
