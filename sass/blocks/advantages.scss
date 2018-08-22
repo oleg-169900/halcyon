@@ -1,0 +1,19 @@
+.advantages {
+  @include padding-y;
+  text-align: center;
+}
+
+.advantages__title {
+  @include title;
+}
+
+.advantages__title:after {
+  @include title-after;
+  background-color: #ffffff;
+}
+
+.advantages__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}

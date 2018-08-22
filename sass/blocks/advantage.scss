@@ -1,0 +1,57 @@
+.advantage {
+  width: 360px;
+}
+
+.advantage::before {
+  content: "";
+  display: block;
+  width: 150px;
+  height: 150px;
+  margin: 0 auto;
+
+  background-color: #3dc9b3;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  border-radius: 50%;
+}
+
+.advantage--design::before {
+  background-image: url("../img/laptop.png");
+}
+
+.advantage--dev::before {
+  background-image: url("../img/brackets.png");
+}
+
+.advantage--love::before {
+  background-image: url("../img/heart.png");
+}
+
+.advantage__title {
+  position: relative;
+
+  margin-top: 30px;
+
+  font-size: 15px;
+  line-height: 20px;
+  color: #353535;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.advantage__title::after {
+  content: "";
+  display: block;
+  width: 34px;
+  height: 3px;
+  margin: 25px auto;
+
+  background-color: #3dc9b3;
+}
+
+.advantage__text {
+  padding: 0 30px;
+  @include text-blocks;
+  line-height: 20px;
+}

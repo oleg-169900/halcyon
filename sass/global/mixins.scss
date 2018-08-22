@@ -32,12 +32,11 @@
 }
 
 @mixin padding-y {
-  padding-top: 105px;
-  padding-bottom: 130px;
+  padding-top: 100px;
+  padding-bottom: 125px;
 }
 
 @mixin text-blocks {
   font-size: 14px;
-  line-height: 30px;
   color: #8c9398;
 }
