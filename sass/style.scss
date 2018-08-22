@@ -1,18 +1,18 @@
 @import "global/fonts.scss";
 @import "global/scaffolding.scss";
 @import "global/mixins.scss";
-//
-@import "blocks/body-wrapper.scss";
 
+@import "blocks/body-wrapper.scss";
 @import "blocks/page-header.scss";
 @import "blocks/page-title.scss";
 @import "blocks/page-heading.scss";
 @import "blocks/advantages.scss";
 @import "blocks/advantage.scss";
+@import "blocks/about.scss";
 // @import "blocks/contacts.scss";
 // @import "blocks/page-footer.scss";
 // @import "blocks/social.scss";
 // @import "blocks/copyright.scss";
 @import "blocks/center.scss";
 
-// @import "blocks/hidden.scss";
+@import "blocks/hidden.scss";
