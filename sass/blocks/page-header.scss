@@ -1,4 +1,7 @@
 .page-header {
+  display: flex;
+  flex-wrap: wrap;
+
   padding-top: 250px;
   padding-bottom: 340px;
 
@@ -8,7 +11,7 @@
 }
 
 .page-header__text {
-  width: 620px;
+  width: 100%;
   margin: 0 auto;
   margin-top: 30px;
 

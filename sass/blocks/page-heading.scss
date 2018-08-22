@@ -4,6 +4,11 @@
   background-color: #f3f5f8;
 }
 
+.page-heading__center {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .page-heading__title {
   width: 555px;
   @include title;

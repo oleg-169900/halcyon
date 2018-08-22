@@ -3,6 +3,11 @@
   text-align: center;
 }
 
+.advantages__center {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .advantages__title {
   width: 555px;
   @include title;
@@ -17,4 +22,10 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+}
+
+@media (max-width: 767px) {
+  .advantages__list {
+    width: 100%;
+  }
 }

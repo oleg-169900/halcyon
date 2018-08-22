@@ -1,7 +1,10 @@
 .about {
+  display: flex;
+
   background-color: #f3f5f8;
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 50%, rgba(255, 255, 255, 1) 50%), url("../img/iphone.jpg");
   background-repeat: no-repeat;
+
   overflow: hidden;
 }
 
@@ -21,6 +24,9 @@
 }
 
 .about__text-field {
+  display: flex;
+  flex-wrap: wrap;
+
   width: 50%;
   @include padding-y;
   background: #ffffff;
@@ -40,4 +46,28 @@
   width: 457px;
   margin: 12px auto;
   @include text-blocks;
+}
+
+@media (max-width: 767px) {
+  .about {
+    flex-wrap: wrap;
+  }
+
+  .about__center {
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .about__center::before {
+    display: none;
+  }
+
+  .about__text-field {
+    width: 100%;
+  }
+
+  .about__text {
+    width: 280px;
+  }
 }
