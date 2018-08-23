@@ -1,0 +1,47 @@
+.features {
+  padding: 100px 0;
+}
+
+.features__center {
+  position: relative;
+  overflow: hidden;
+}
+
+.features__center--nojs {
+  overflow: visible;
+  .features__list {
+    flex-wrap: wrap;
+  }
+}
+
+.features__list {
+  position: relative;
+  left: 0;
+
+  display: flex;
+  transition-duration: 1s;
+}
+
+.features__toggles {
+  @include slider-toggles;
+  margin-top: 30px;
+}
+
+.features__toggle {
+  @include slider-toggle;
+}
+
+.features__toggle--active {
+  @include slider-toggle--active;
+}
+
+@media (max-width: 767px) {
+  .features__list {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .features__toggles {
+    display: none;
+  }
+}

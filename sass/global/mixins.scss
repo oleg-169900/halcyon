@@ -39,3 +39,25 @@
   font-size: 14px;
   color: #8c9398;
 }
+
+@mixin slider-toggles {
+  display: flex;
+  justify-content: space-between;
+
+  width: 58px;
+  height: 14px;
+  margin: 0 auto;
+
+  background: rgba(0, 0, 0, 0);
+}
+
+@mixin slider-toggle {
+  width: 10px;
+  height: 10px;
+  border: 2px solid #cccdcc;
+  border-radius: 50%;
+}
+
+@mixin slider-toggle--active {
+  background-color: #212024;
+}
