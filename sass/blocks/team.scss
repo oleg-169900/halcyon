@@ -1,0 +1,61 @@
+.team {
+  padding: 100px 0;
+}
+
+.team__center {
+  position: relative;
+  overflow: hidden;
+}
+
+.team__title {
+  width: 555px;
+  @include title;
+}
+
+.team__title::after {
+  @include title-after;
+  background-color: #ffffff;
+}
+
+.team__center--nojs {
+  overflow: visible;
+  .team__list {
+    flex-wrap: wrap;
+  }
+}
+
+.team__list {
+  position: relative;
+  left: 0;
+
+  display: flex;
+  transition-duration: 1s;
+}
+
+.team__toggles {
+  @include slider-toggles;
+  margin-top: 30px;
+}
+
+.team__toggle {
+  @include slider-toggle;
+}
+
+.team__toggle--active {
+  @include slider-toggle--active;
+}
+
+@media (max-width: 767px) {
+  .team__title {
+    width: 100%;
+  }
+
+  .team__list {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .team__toggles {
+    display: none;
+  }
+}

@@ -11,23 +11,11 @@
 }
 
 .feature__title {
-  margin-top: 30px;
-
-  font-size: 15px;
-  line-height: 20px;
-  color: #353535;
-  font-weight: bold;
-  text-transform: uppercase;
+  @include item-title;
 }
 
 .feature__title::after {
-  content: "";
-  display: block;
-  width: 34px;
-  height: 3px;
-  margin: 25px auto;
-
-  background-color: #3dc9b3;
+  @include item-title-after;
 }
 
 .feature__img {
