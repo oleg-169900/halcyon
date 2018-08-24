@@ -1,0 +1,13 @@
+.page-footer {
+  padding: 110px 0;
+  background-color: #f3f5f8;
+}
+
+.page-footer__title {
+  @include title;
+}
+
+.page-footer__title::after {
+  @include title-after;
+  background-color: #f3f5f8;
+}
